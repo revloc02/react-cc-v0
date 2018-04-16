@@ -1,4 +1,5 @@
 const initialState = {
+  count: 0,
   creature: {
     title: {
       name: "Great Wyrm Silver Dragon",

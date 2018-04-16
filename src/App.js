@@ -3,6 +3,8 @@ import Split from "./Layout/Split";
 import StatBlock from "./Components/StatBlock";
 import Templates from "./Components/Templates";
 import initialState from "./Data/InitialState";
+// import Counter from "./Components/Counter";
+import ContainerCounter from "./Containers/ContainerCounter";
 import "./App.css";
 
 function actionCreature(state = initialState, action) {
@@ -20,11 +22,13 @@ function actionCreature(state = initialState, action) {
 
 class App extends Component {
   render() {
-    console.log("App", initialState.creature);
+    // console.log("App", initialState.creature);
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Creature Creator</h1>
+          <ContainerCounter />
+          {/* <Counter value={state.count}/> */}
         <Split gapSize="8" ratio="1/3">
           <p>Creature selector goes here.</p>
           <Templates />
