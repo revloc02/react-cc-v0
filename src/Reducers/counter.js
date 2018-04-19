@@ -1,11 +1,13 @@
 import initialState from "../Data/InitialState";
 
 // Reducer
-function counter(state = {count: 0}, action) {
-  const count = state.count;
+function counter(state = 0, action) {
+  console.log("state:",state)
+  const count = state;
+  console.log("count:",count)
   switch (action.type) {
     case "increase":
-      return { count: count + 1 };
+      return count + 1 
     default:
       return state;
   }

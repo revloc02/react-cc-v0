@@ -29,7 +29,7 @@ class App extends Component {
             <div>
               <p>Creature selector goes here.</p>
               <ContainerCounter />
-              {/* <ContainerDecrease /> */}
+              <ContainerDecrease />
             </div>
             <Templates />
           </Split>
