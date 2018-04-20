@@ -1,8 +1,6 @@
 import { connect } from "react-redux";
 import Decounter from "../components/Decounter";
-
-// Action
-const decountAction = { type: "DECOUNT" };
+import { decountAction } from '../actions'
 
 // Container
 // Map Redux state to component props
