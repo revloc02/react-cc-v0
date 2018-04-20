@@ -1,8 +1,8 @@
 import { connect } from "react-redux";
-import Decrease from "../components/Decrease";
+import Decounter from "../components/Decounter";
 
 // Action
-const decreaseAction = { type: "decrease" };
+const decountAction = { type: "DECOUNT" };
 
 // Container
 // Map Redux state to component props
@@ -15,10 +15,10 @@ const mapStateToProps = state => {
 // Map Redux actions to component props
 const mapDispatchToProps = dispatch => {
   return {
-    onDecreaseClick: () => dispatch(decreaseAction)
+    onDecountClick: () => dispatch(decountAction)
   };
 };
 
 // Connected Component
-export default connect(mapStateToProps, mapDispatchToProps)(Decrease);
+export default connect(mapStateToProps, mapDispatchToProps)(Decounter);
 // End Container

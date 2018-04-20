@@ -2,7 +2,7 @@
 const decount = (state = 10, action) => {
   const decount = state;
   switch (action.type) {
-    case "decrease":
+    case "DECOUNT":
       return decount - 1;
     default:
       return state;

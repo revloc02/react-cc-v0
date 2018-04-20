@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
 
 // React component
-export default class Decrease extends Component {
+export default class Decounter extends Component {
     render() {
-      const { value, onDecreaseClick } = this.props
+      const { value, onDecountClick } = this.props
       return (
         <div>
           <span>{value}</span>
-          <button onClick={onDecreaseClick}>Decrease</button>
+          <button onClick={onDecountClick}>Decount</button>
         </div>
       )
     }
   }
   
-  // Decrease.propTypes = {
+  // Decount.propTypes = {
   //   value: PropTypes.number.isRequired,
   //   onIncreaseClick: PropTypes.func.isRequired
   // }

@@ -5,7 +5,7 @@ import Templates from "./components/Templates";
 import initialState from "./data/InitialState";
 import ContainerCounter from "./containers/ContainerCounter";
 import "./App.css";
-import ContainerDecrease from "./containers/ContainerDecrease";
+import ContainerDecouter from "./containers/ContainerDecounter";
 
 // const actionCreature = (state = initialState, action) => {
 //   if (typeof state === "undefined") {
@@ -29,7 +29,7 @@ class App extends Component {
             <div>
               <p>Creature selector goes here.</p>
               <ContainerCounter />
-              <ContainerDecrease />
+              <ContainerDecouter />
             </div>
             <Templates />
           </Split>

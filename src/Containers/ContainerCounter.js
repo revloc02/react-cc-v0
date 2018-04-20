@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import Counter from "../components/Counter";
 
 // Action
-const increaseAction = { type: "increase" };
+const increaseAction = { type: "INCREASE" };
 
 // Container
 // Map Redux state to component props
