@@ -5,19 +5,7 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import initialState from "./Data/InitialState";
-import rootReducer from './Reducers'
-
-// Reducer
-// function counter(state = {count: 0}, action) {
-//   const count = state.count;
-//   switch (action.type) {
-//     case "increase":
-//       return { count: count + 1 };
-//     default:
-//       return state;
-//   }
-// }
+import rootReducer from './reducers'
 
 // Store
 const store = createStore(

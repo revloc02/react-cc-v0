@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Stack from "../Layout/Stack";
+import Stack from "../layout/Stack";
 import Title from "./Title";
 import Defense from "./Defense";
 import Offense from "./Offense";

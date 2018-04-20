@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Grid from "../Layout/Grid";
+import Grid from "../layout/Grid";
 import Incrementor from "./Incrementor";
 
 class Templates extends Component {

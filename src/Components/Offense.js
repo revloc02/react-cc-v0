@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Stack from "../Layout/Stack";
+import Stack from "../layout/Stack";
 
 class Offense extends Component {
   render() {

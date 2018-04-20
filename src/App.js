@@ -1,23 +1,23 @@
 import React, { Component } from "react";
-import Split from "./Layout/Split";
-import StatBlock from "./Components/StatBlock";
-import Templates from "./Components/Templates";
-import initialState from "./Data/InitialState";
-import ContainerCounter from "./Containers/ContainerCounter";
+import Split from "./layout/Split";
+import StatBlock from "./components/StatBlock";
+import Templates from "./components/Templates";
+import initialState from "./data/InitialState";
+import ContainerCounter from "./containers/ContainerCounter";
 import "./App.css";
-import ContainerDecrease from "./Containers/ContainerDecrease";
+import ContainerDecrease from "./containers/ContainerDecrease";
 
-function actionCreature(state = initialState, action) {
-  if (typeof state === "undefined") {
-    return initialState;
-  }
-  switch (action.type) {
-    case "GET_CREATURE":
-      return state;
-    default:
-      return state;
-  }
-}
+// const actionCreature = (state = initialState, action) => {
+//   if (typeof state === "undefined") {
+//     return initialState;
+//   }
+//   switch (action.type) {
+//     case "GET_CREATURE":
+//       return state;
+//     default:
+//       return state;
+//   }
+// };
 
 class App extends Component {
   render() {
