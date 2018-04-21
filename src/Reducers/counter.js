@@ -4,6 +4,8 @@ const counter = (state = 0, action) => {
   switch (action.type) {
     case "INCREASE":
       return count + 1;
+    case "DECREASE":
+      return count - 1;
     default:
       return state;
   }
