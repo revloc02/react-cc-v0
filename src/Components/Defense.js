@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Stack from "../layout/Stack";
 import Stat from "./Stat";
+import PropTypes from "prop-types";
 
 class Defense extends Component {
   render() {
@@ -25,5 +26,9 @@ class Defense extends Component {
     );
   }
 }
+
+Defense.propTypes = {
+  defense: PropTypes.object.isRequired
+};
 
 export default Defense;

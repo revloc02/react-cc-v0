@@ -87,11 +87,21 @@ const initialState = {
         "Vital Strike",
         "Weapon Focus (bite)"
       ],
-      Skills:
-        "Acrobatics +27 (+31 jump), Diplomacy +40, Fly +24, Heal +40, Intimidate +40, Knowledge (arcana, history, local, nobility, planes) +40, Perception +40, Sense Motive +40, Spellcraft +40, Survival +40",
-      RacialMods: [],
-      Languages:
-        "Auran, Common, Draconic, Dwarven, Elven, Halfling, Giant, Terran, 1 more"
+      skills: [
+        "Acrobatics +27 (+31 jump)",
+        "Diplomacy +40",
+        "Fly +24",
+        "Heal +40",
+        "Intimidate +40",
+        "Knowledge (arcana, history, local, nobility, planes) +40",
+        "Perception +40",
+        "Sense Motive +40",
+        "Spellcraft +40",
+        "Survival +40"
+      ],
+      racialMods: [],
+      languages:
+        ["Auran", "Common", "Draconic", "Dwarven", "Elven", "Halfling", "Giant", "Terran", "1 more"],
     },
     SpecialAbilities: {
       SQ: "change shape 3/day (any animal or humanoid; polymorph)",

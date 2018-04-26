@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Stack from "../layout/Stack";
 import Stat from "./Stat";
+import AttributeList from "./AttributeList";
 
 class Statistics extends Component {
   render() {
@@ -21,12 +22,15 @@ class Statistics extends Component {
           <Stat name="CMB" value={statistics.cmb} />
           <Stat name="CMD" value={statistics.cmd} />
         </div>
-        <ul>
-          Feats{" "}
-          {statistics.feats.map((feat, index) => <li key={index}>{feat}</li>)}
-        </ul>
-        <p>Feats {statistics.feats.toString()}</p>
-        <p>Skills</p>
+        <div>
+          <AttributeList name="Feats" list={statistics.feats} />
+        </div>
+        <div>
+          <AttributeList name="Skills" list={statistics.skills} />
+        </div>
+        <div>
+          <AttributeList name="Languages" list={statistics.languages} />
+        </div>
       </Stack>
     );
   }
