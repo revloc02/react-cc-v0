@@ -34,15 +34,15 @@ const initialState = {
         will: 26
       },
       Save_Mods: [],
-      DefensiveAbilities: "reflective scales",
-      DR: { magic: 20 },
-      Immune: "acid, cold, paralysis, sleep",
-      Resist: [],
-      SR: "33",
-      Weaknesses: "Vulnerability to fire"
+      defensiveAbilities: "reflective scales",
+      dr: { magic: 20 },
+      immune: ["acid", "cold", "paralysis", "sleep"],
+      resist: [],
+      sr: "33",
+      weaknesses: "Vulnerability to fire"
     },
     offense: {
-      Speed: "40 ft., fly 250 ft. (poor); cloudwalking, graceful flight",
+      speed: "40 ft., fly 250 ft. (poor); cloudwalking, graceful flight",
       Speed_Mod: [],
       Melee: [
         "bite +36 (4d8+21/19-20)",
@@ -51,10 +51,10 @@ const initialState = {
         "2 wings +33 (2d8+7)"
       ],
       Ranged: [],
-      Space: "30 ft.",
-      Reach: "20 ft. (30 ft. with bite)",
-      SpecialAttacks:
-        "breath weapon (70-ft. cone, DC 32, 24d8 cold), crush (4d8+21, DC 32), paralyzing breath, tail sweep (2d8+21, DC 32)",
+      space: "30 ft.",
+      reach: "20 ft. (30 ft. with bite)",
+      specialAttacks:
+        ["breath weapon (70-ft. cone, DC 32, 24d8 cold)", "crush (4d8+21, DC 32)", "paralyzing breath", "tail sweep (2d8+21, DC 32)"],
       SpellLikeAbilities:
         "Spell-Like Abilities (CL 29th; concentration +37)  At will-control weather, control winds, detect evil, feather fall, fog cloud, reverse gravity",
       SpellsKnown:

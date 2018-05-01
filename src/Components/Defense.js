@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Stack from "../layout/Stack";
 import Stat from "./Stat";
+import AttributeList from "./AttributeList";
 import PropTypes from "prop-types";
 
 class Defense extends Component {
@@ -21,6 +22,11 @@ class Defense extends Component {
           <Stat name="Fort" value={defense.saves.fort} />
           <Stat name="Ref" value={defense.saves.ref} />
           <Stat name="Will" value={defense.saves.will} />
+        </div>
+        <div>
+          {/* <Stat name="DR" value={defense.dr} /> */}
+          <AttributeList name="Immune" list={defense.immune} />
+          <Stat name="SR" value={defense.sr} />
         </div>
       </Stack>
     );
