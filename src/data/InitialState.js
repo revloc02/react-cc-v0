@@ -1,6 +1,46 @@
 const initialState = {
   count: 0,
   decount: 10,
+  statistics: {
+    abilityScores: { str: 40, dex: 6, con: 27, int: 26, wis: 27, cha: 26 },
+    AbilitiyScore_Mods: [],
+    bab: 39,
+    cmb: 51,
+    cmd: 59,
+    cmd_sp: "(63 vs. trip)",
+    feats: [
+      "Critical Focus",
+      "Flyby Attack",
+      "Hover",
+      "Improved Critical (bite)",
+      "Improved Initiative",
+      "Improved Vital Strike",
+      "Iron Will",
+      "Lighting Reflexes",
+      "Multiattack",
+      "Power Attack",
+      "Quicken Spell",
+      "Skill Focus (Fly)",
+      "Snatch",
+      "Vital Strike",
+      "Weapon Focus (bite)"
+    ],
+    skills: [
+      "Acrobatics +27 (+31 jump)",
+      "Diplomacy +40",
+      "Fly +24",
+      "Heal +40",
+      "Intimidate +40",
+      "Knowledge (arcana, history, local, nobility, planes) +40",
+      "Perception +40",
+      "Sense Motive +40",
+      "Spellcraft +40",
+      "Survival +40"
+    ],
+    racialMods: [],
+    languages:
+      ["Auran", "Common", "Draconic", "Dwarven", "Elven", "Halfling", "Giant", "Terran", "1 more"],
+  },
   creature: {
     title: {
       name: "Great Wyrm Silver Dragon",
