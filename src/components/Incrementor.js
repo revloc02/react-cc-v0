@@ -15,21 +15,28 @@ const InputIncDec = styled.input`
 
 class Incrementor extends Component {
   render() {
+    const { label, onIncreaseClick, onDecreaseClick } = this.props;
     return (
       <div>
-        {this.props.label}:<IncDecrement
+        {label}:<IncDecrement
           name="decrement"
           type="button"
           value="-"
+          onClick={onDecreaseClick}
         />
         <InputIncDec
-          name={this.props.label}
+          name={label}
           type="text"
           value="0"
           maxlength="2"
           readonly="true"
         />
-        <IncDecrement name="increment" type="button" value="+" />
+        <IncDecrement
+          name="increment"
+          type="button"
+          value="+"
+          onClick={onIncreaseClick}
+        />
       </div>
     );
   }

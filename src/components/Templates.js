@@ -4,9 +4,10 @@ import Incrementor from "./Incrementor";
 
 class Templates extends Component {
   render() {
+    const { onIncreaseAdvancedClick, onDecreaseAdvancedClick} = this.props
     return (
       <Grid gapSize="8" columns="6">
-        <Incrementor label="Advanced" />
+        <Incrementor label="Advanced" onIncreaseClick={onIncreaseAdvancedClick} onDecreaseClick={onDecreaseAdvancedClick} />
         <Incrementor label="Giant" />
         <Incrementor label="Young" />
         <span>
