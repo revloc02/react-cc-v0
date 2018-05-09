@@ -6,7 +6,7 @@ import { increaseAdvanced, decreaseAdvanced } from "../actions";
 const mapDispatchToProps = dispatch => ({
 //   onMightyCheck: () => dispatch(addMighty),
 //   onMightyUncheck: () => dispatch(removeMighty),
-  onIncreaseAdvancedClick: () => dispatch(increaseAdvanced),
+  onIncreaseAdvancedClick: () => {console.log("TemplatesContainer:onIncreaseAdvancedClick");return dispatch(increaseAdvanced)},
   onDecreaseAdvancedClick: () => dispatch(decreaseAdvanced)
 });
 

@@ -9,10 +9,12 @@ const mapStateToProps = state => ({
 });
 
 // Map Redux actions to component props
-const mapDispatchToProps = dispatch => ({
-  onIncreaseClick: () => dispatch(increaseAction),
-  onDecreaseClick: () => dispatch(decreaseAction)
-});
+const mapDispatchToProps = dispatch => {
+  return {
+    onIncreaseClick: () => {console.log("counterContainer:increaseAction");return dispatch(increaseAction)},
+    onDecreaseClick: () => dispatch(decreaseAction)
+  };
+};
 
 // Connected Component
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);

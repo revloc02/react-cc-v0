@@ -5,7 +5,7 @@ import AttributeList from "./AttributeList";
 
 class Statistics extends Component {
   render() {
-    console.log("yomama", this.props)
+    console.log("Statistics", this.props)
     const statistics = this.props.value;
     return (
       <Stack gapSize="0">

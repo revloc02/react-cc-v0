@@ -102,7 +102,7 @@ const initialState = {
       SpellsPrepared: [],
       SpellDomains: []
     },
-    tactics: "yomama",
+    tactics: "some Tactics here",
     statistics: {
       abilityScores: { str: 39, dex: 6, con: 27, int: 26, wis: 27, cha: 26 },
       AbilitiyScore_Mods: [],

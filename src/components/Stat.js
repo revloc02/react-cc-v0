@@ -15,7 +15,7 @@ class Stat extends Component {
 
 Stat.propTypes = {
   name: PropTypes.string,
-  value: PropTypes.string.isRequired
+  value: PropTypes.isRequired
 };
 
 export default Stat;
