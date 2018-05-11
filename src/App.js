@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Split from "./layout/Split";
 import StatBlock from "./components/StatBlock";
 import Templates from "./components/Templates";
+import TemplatesContainer from "./containers/TemplatesContainer";
 import initialState from "./data/InitialState";
 import ContainerCounter from "./containers/ContainerCounter";
 import "./App.css";
@@ -31,7 +32,7 @@ class App extends Component {
               <ContainerCounter />
               <ContainerDecouter />
             </div>
-            <Templates />
+            <TemplatesContainer />
           </Split>
         </header>
         <Split gapSize="8" ratio="1/2">

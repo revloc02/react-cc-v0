@@ -4,11 +4,9 @@ import { increaseAdvanced, decreaseAdvanced } from "../actions";
 
 // Map Redux actions to component props
 const mapDispatchToProps = dispatch => ({
-//   onMightyCheck: () => dispatch(addMighty),
-//   onMightyUncheck: () => dispatch(removeMighty),
-  onIncreaseAdvancedClick: () => {console.log("TemplatesContainer:onIncreaseAdvancedClick");return dispatch(increaseAdvanced)},
+  onIncreaseAdvancedClick: () => dispatch(increaseAdvanced),
   onDecreaseAdvancedClick: () => dispatch(decreaseAdvanced)
 });
 
 // Connected Component
-export default connect(mapDispatchToProps)(Templates);
+export default connect(null, mapDispatchToProps)(Templates);
