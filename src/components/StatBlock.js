@@ -11,10 +11,10 @@ class StatBlock extends Component {
     const creature = this.props.creature;
     return (
       <Stack gapSize="4">
-        <Title title={creature.title} />
+        {/* <Title title={creature.title} />
         <Defense defense={creature.defense} />
         <Offense offense={creature.offense} />
-        <Tactics tactics={creature.tactics} />
+        <Tactics tactics={creature.tactics} /> */}
         <StatisticsContainer />
       </Stack>
     );

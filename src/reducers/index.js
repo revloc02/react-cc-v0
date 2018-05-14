@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 import count from "./counter";
 import decount from "./decount";
-import statistics from "./statistics";
+import creature from "./creature";
 
 export default combineReducers({
   count,
   decount,
-  statistics
+  creature
 });

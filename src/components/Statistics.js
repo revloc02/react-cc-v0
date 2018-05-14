@@ -14,23 +14,23 @@ class Statistics extends Component {
           <Stat name="Str" value={statistics.abilityScores.str} />
           <Stat name="Dex" value={statistics.abilityScores.dex} />
           <Stat name="Con" value={statistics.abilityScores.con} />
-          <Stat name="Int" value={statistics.abilityScores.int} />
+          {/* <Stat name="Int" value={statistics.abilityScores.int} />
           <Stat name="Wis" value={statistics.abilityScores.wis} />
-          <Stat name="Cha" value={statistics.abilityScores.cha} />
+          <Stat name="Cha" value={statistics.abilityScores.cha} /> */}
         </div>
         <div>
-          <Stat name="Base Atk" value={statistics.bab} />
+          {/* <Stat name="Base Atk" value={statistics.bab} />
           <Stat name="CMB" value={statistics.cmb} />
-          <Stat name="CMD" value={statistics.cmd} />
+          <Stat name="CMD" value={statistics.cmd} /> */}
         </div>
         <div>
-          <AttributeList name="Feats" list={statistics.feats} />
+          {/* <AttributeList name="Feats" list={statistics.feats} /> */}
         </div>
         <div>
-          <AttributeList name="Skills" list={statistics.skills} />
+          {/* <AttributeList name="Skills" list={statistics.skills} /> */}
         </div>
         <div>
-          <AttributeList name="Languages" list={statistics.languages} />
+          {/* <AttributeList name="Languages" list={statistics.languages} /> */}
         </div>
       </Stack>
     );

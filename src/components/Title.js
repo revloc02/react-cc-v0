@@ -5,13 +5,14 @@ import Stat from "./Stat";
 class Title extends Component {
   render() {
     const title = this.props.title;
+    const xp = title.xp.toLocaleString("en");
     return (
       <Stack gapSize="0">
         <h2 className="sectionHeading">
           {title.name} {title.cr}
         </h2>
         <div>
-          <Stat name="XP" value={title.xp.toLocaleString("en")} />
+          <Stat name="XP" value={xp} />
         </div>
         <div>
           <Stat value={title.alignment} />

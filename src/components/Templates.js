@@ -7,7 +7,6 @@ class Templates extends Component {
     const { onIncreaseAdvancedClick, onDecreaseAdvancedClick} = this.props
     return (
       <Grid gapSize="8" columns="6">
-      <button onClick={onIncreaseAdvancedClick}>++</button>
         <Incrementor label="Advanced" onIncreaseClick={onIncreaseAdvancedClick} onDecreaseClick={onDecreaseAdvancedClick} />
         <Incrementor label="Giant" />
         <Incrementor label="Young" />

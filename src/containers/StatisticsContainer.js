@@ -3,7 +3,7 @@ import Statistics from "../components/Statistics";
 
 // Map Redux state to component props
 const mapStateToProps = state => ({
-  value: state.statistics
+  value: state.creature.statistics
 });
 
 // Connected Component
