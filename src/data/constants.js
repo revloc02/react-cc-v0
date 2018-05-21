@@ -1,0 +1,1 @@
+export const MAX_STACKED_TEMPLATES = 5;

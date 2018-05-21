@@ -7,4 +7,4 @@ const mapStateToProps = state => ({
 });
 
 // Connected Component
-export default connect(mapStateToProps)(Statistics);
+export default connect(mapStateToProps, null)(Statistics);
