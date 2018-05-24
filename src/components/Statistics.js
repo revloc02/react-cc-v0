@@ -6,14 +6,14 @@ import AttributeList from "./AttributeList";
 class Statistics extends Component {
   render() {
     console.log("Statistics", this.props)
-    const statistics = this.props.value;
+    const statistics = this.props.stats;
     return (
       <Stack gapSize="0">
         <h3 className="sectionHeading">Statistics</h3>
         <div>
-          <Stat name="Str" value={statistics.abilityScores.str} />
-          <Stat name="Dex" value={statistics.abilityScores.dex} />
-          <Stat name="Con" value={statistics.abilityScores.con} />
+          <Stat name="Str" value={statistics.str} />
+          <Stat name="Dex" value={statistics.dex} />
+          <Stat name="Con" value={statistics.con} />
           {/* <Stat name="Int" value={statistics.abilityScores.int} />
           <Stat name="Wis" value={statistics.abilityScores.wis} />
           <Stat name="Cha" value={statistics.abilityScores.cha} /> */}

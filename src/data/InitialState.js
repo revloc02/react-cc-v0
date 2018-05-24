@@ -7,6 +7,9 @@ const initialState = {
     young: 0,
     mighty: 0
   },
+  baseStats: {
+    str: 39, dex: 6, con: 27
+  },
   creature: {
     title: {
       name: "Great Wyrm Silver Dragon",
