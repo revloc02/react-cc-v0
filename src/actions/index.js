@@ -4,5 +4,9 @@ export const decountAction = { type: "DECOUNT" };
 
 export const addMighty = { type: "ADD_MIGHTY" };
 export const removeMighty = { type: "REMOVE_MIGHTY" };
+
 export const increaseAdvanced = { type: "INCREASE_ADVANCED" };
 export const decreaseAdvanced = { type: "DECREASE_ADVANCED" };
+
+export const increaseGiant = { type: "INCREASE_GIANT" };
+export const decreaseGiant = { type: "DECREASE_GIANT" };

@@ -6,8 +6,11 @@ class Templates extends Component {
   render() {
     const {
       advanced,
+      giant,
       onIncreaseAdvancedClick,
-      onDecreaseAdvancedClick
+      onDecreaseAdvancedClick,
+      onIncreaseGiantClick,
+      onDecreaseGiantClick
     } = this.props;
     return (
       <Grid gapSize="8" columns="6">
@@ -17,7 +20,12 @@ class Templates extends Component {
           onIncreaseClick={onIncreaseAdvancedClick}
           onDecreaseClick={onDecreaseAdvancedClick}
         />
-        <Incrementor label="Giant" />
+        <Incrementor
+          label="Giant"
+          val={giant}
+          onIncreaseClick={onIncreaseGiantClick}
+          onDecreaseClick={onDecreaseGiantClick}
+        />
         <Incrementor label="Young" />
         <span>
           <input
