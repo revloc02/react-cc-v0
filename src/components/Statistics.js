@@ -14,9 +14,9 @@ class Statistics extends Component {
           <Stat name="Str" value={statistics.str} />
           <Stat name="Dex" value={statistics.dex} />
           <Stat name="Con" value={statistics.con} />
-          {/* <Stat name="Int" value={statistics.abilityScores.int} />
-          <Stat name="Wis" value={statistics.abilityScores.wis} />
-          <Stat name="Cha" value={statistics.abilityScores.cha} /> */}
+          <Stat name="Int" value={statistics.int} />
+          <Stat name="Wis" value={statistics.wis} />
+          <Stat name="Cha" value={statistics.cha} />
         </div>
         <div>
           {/* <Stat name="Base Atk" value={statistics.bab} />

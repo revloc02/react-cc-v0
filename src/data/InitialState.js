@@ -8,7 +8,7 @@ const initialState = {
     mighty: 0
   },
   baseStats: {
-    str: 39, dex: 6, con: 27
+    str: 39, dex: 6, con: 27, int: 26, wis: 27, cha: 26
   },
   creature: {
     title: {
