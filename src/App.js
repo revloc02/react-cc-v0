@@ -1,24 +1,11 @@
 import React, { Component } from "react";
 import Split from "./layout/Split";
 import StatBlock from "./components/StatBlock";
-import Templates from "./components/Templates";
 import TemplatesContainer from "./containers/TemplatesContainer";
 import initialState from "./data/InitialState";
 import ContainerCounter from "./containers/ContainerCounter";
 import "./App.css";
 import ContainerDecouter from "./containers/ContainerDecounter";
-
-// const actionCreature = (state = initialState, action) => {
-//   if (typeof state === "undefined") {
-//     return initialState;
-//   }
-//   switch (action.type) {
-//     case "GET_CREATURE":
-//       return state;
-//     default:
-//       return state;
-//   }
-// };
 
 class App extends Component {
   render() {

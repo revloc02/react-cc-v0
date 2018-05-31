@@ -147,8 +147,7 @@ const initialState = {
     Swim: "0",
     Land: "1",
     TemplatesApplied: []
-  },
-  templates: {}
+  }
 };
 
 export default initialState;

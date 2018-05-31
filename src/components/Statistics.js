@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Stack from "../layout/Stack";
 import Stat from "./Stat";
-import AttributeList from "./AttributeList";
+// import AttributeList from "./AttributeList";
 
 class Statistics extends Component {
   render() {
