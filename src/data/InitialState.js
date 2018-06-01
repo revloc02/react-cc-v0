@@ -4,8 +4,8 @@ const initialState = {
   templates: {
     advanced: 0,
     giant: 0,
-    young: 0,
-    mighty: 0
+    // young: 0,
+    // mighty: 0
   },
   baseStats: {
     str: 39, dex: 6, con: 27, int: 26, wis: 27, cha: 26

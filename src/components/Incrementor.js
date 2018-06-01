@@ -27,7 +27,6 @@ class Incrementor extends Component {
         <InputIncDec
           name={label}
           type="text"
-          defaultValue="0"
           value={val}
           maxLength="2"
           readOnly="true"

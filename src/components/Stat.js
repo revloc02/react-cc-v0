@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 
 class Stat extends Component {
   render() {
-    const { name, value } = this.props;
+    const { name, val } = this.props;
     return (
       <span>
         {name ? <strong>{name}:</strong> : ""}
-        {value}
+        {val}
       </span>
     );
   }
@@ -15,7 +15,7 @@ class Stat extends Component {
 
 Stat.propTypes = {
   name: PropTypes.string,
-  value: PropTypes.isRequired
+  val: PropTypes.isRequired
 };
 
 export default Stat;
