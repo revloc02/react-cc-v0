@@ -13,7 +13,7 @@ const advanced = (state = initialState.templates.advanced, action) => {
       if (adv <= 0) return 0;
       else return adv - 1;
     default:
-      return 0;
+      return state;
   }
 };
 
@@ -27,7 +27,7 @@ const giant = (state = initialState.templates.giant, action) => {
       if (giant <= 0) return 0;
       else return giant - 1;
     default:
-      return 0;
+      return state;
   }
 };
 
