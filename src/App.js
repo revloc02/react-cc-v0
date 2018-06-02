@@ -6,6 +6,7 @@ import initialState from "./data/InitialState";
 import ContainerCounter from "./containers/ContainerCounter";
 import "./App.css";
 import ContainerDecouter from "./containers/ContainerDecounter";
+import CreatureSelector from "./components/CreatureSelector";
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
           <h1 className="App-title">Creature Creator</h1>
           <Split gapSize="8" ratio="1/3">
             <div>
-              <p>Creature selector goes here.</p>
+              <CreatureSelector />
               <ContainerCounter />
               <ContainerDecouter />
             </div>
