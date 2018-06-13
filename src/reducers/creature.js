@@ -13,9 +13,5 @@ import statistics from "./statistics";
 //         return state;
 //     }
 //   };
-
-  const creature = combineReducers({
-    statistics
-  });
   
   export default creature;

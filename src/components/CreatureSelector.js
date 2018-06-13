@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import data from "../data/creatures.json";
 
-class CreatrueSelector extends Component {
+class CreatureSelector extends Component {
   render() {
-    const statistics = this.props.stats;
+    const {handleChange} = this.props;
     return (
       <label>
         Select Creature:
         {/* <select value={this.state.value} onChange={this.handleChange}> */}
-        <select>
+        <select onChange={handleChange}>
           {data.map(creature => (
-            <option key={creature.Name} value={creature.Name}>
-              {creature.Name}
+            <option key={creature.Name + " " + creature.Source}>
+              {creature.Name} CR {creature.CR}
             </option>
           ))}
         </select>
@@ -20,4 +20,4 @@ class CreatrueSelector extends Component {
   }
 }
 
-export default CreatrueSelector;
+export default CreatureSelector;
