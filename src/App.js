@@ -7,8 +7,15 @@ import ContainerCounter from "./containers/ContainerCounter";
 import "./App.css";
 import ContainerDecouter from "./containers/ContainerDecounter";
 import CreatureSelectorContainer from "./containers/CreatureSelectorContainer";
+import { fetchCreatureData, storeCreatureData } from "./actions";
+//temp
+import data from "./data/creatures.json";
 
 class App extends Component {
+  componentDidMount(){
+    // fetchCreatureData(store.dispatch);
+storeCreatureData(data);
+  }
   render() {
     return (
       <div className="App">

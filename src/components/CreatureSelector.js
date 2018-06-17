@@ -2,8 +2,12 @@ import React, { Component } from "react";
 import data from "../data/creatures.json";
 
 class CreatureSelector extends Component {
+  // this componentDidMount is temporary
+  componentDidMount() {
+    this.props.didMount(data);
+  }
   render() {
-    const {handleChange} = this.props;
+    const {didMount, handleChange} = this.props;
     return (
       <label>
         Select Creature:

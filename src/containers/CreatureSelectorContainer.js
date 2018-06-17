@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import CreatureSelector from "../components/CreatureSelector";
-import { selectCreature } from "../actions";
+import { selectCreature, storeCreatureData } from "../actions";
 
 // Container
 // Map Redux state to component props
@@ -10,6 +10,7 @@ import { selectCreature } from "../actions";
 
 // Map Redux actions to component props
 const mapDispatchToProps = (dispatch) => ({
+  didMount: creatures => dispatch(storeCreatureData(creatures)),
   handleChange: creature => dispatch(selectCreature(creature))
 });
 
