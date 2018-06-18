@@ -16,7 +16,7 @@ const parseCreature = (creatures) => {
   return (creatures.map(creature => (
     {name: creature.Name,
       cr: creature.CR,
-      cr: creature.XP,
+      xp: creature.XP,
       alignment: creature.Alignment,
       size: creature.Size,
       type: creature.Type,

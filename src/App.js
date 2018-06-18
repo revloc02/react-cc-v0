@@ -12,10 +12,10 @@ import { fetchCreatureData, storeCreatureData } from "./actions";
 import data from "./data/creatures.json";
 
 class App extends Component {
-  componentDidMount(){
-    // fetchCreatureData(store.dispatch);
-storeCreatureData(data);
-  }
+  // this is how I am doing it at work
+  // componentDidMount(){
+    // this.props.dispatch(fetchCreatureData());
+  // }
   render() {
     return (
       <div className="App">
