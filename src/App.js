@@ -7,9 +7,8 @@ import ContainerCounter from "./containers/ContainerCounter";
 import "./App.css";
 import ContainerDecouter from "./containers/ContainerDecounter";
 import CreatureSelectorContainer from "./containers/CreatureSelectorContainer";
-import { fetchCreatureData, storeCreatureData } from "./actions";
-//temp
-import data from "./data/creatures.json";
+// import { fetchCreatureData, storeCreatureData } from "./actions";
+// import data from "./data/creatures.json";
 
 class App extends Component {
   // this is how I am doing it at work

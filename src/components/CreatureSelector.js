@@ -7,7 +7,7 @@ class CreatureSelector extends Component {
     this.props.didMount(data);
   }
   render() {
-    const {didMount, handleChange} = this.props;
+    const {handleChange} = this.props;
     return (
       <label>
         Select Creature:
