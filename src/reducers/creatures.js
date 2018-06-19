@@ -27,6 +27,7 @@ const parseCreature = creatures => {
     ac_natural: parseAcMods("natural", creature.AC_Mods),
     ac_dodge: parseAcMods("dodge", creature.AC_Mods),
     ac_armor: parseAcMods("armor", creature.AC_Mods),
+    ac_dex: parseAcMods("Dex", creature.AC_Mods),
     hp: creature.HP,
     hd: creature.HD,
     saves: creature.Saves,
@@ -34,13 +35,16 @@ const parseCreature = creatures => {
     ref: creature.Ref,
     will: creature.Will,
     immune: creature.Immune
+      ? creature.Immune.split(",").map(item => item.trim())
+      : undefined
   }));
 };
 const parseAcMods = (key, ac_mods) => {
-  const start = ac_mods ? ac_mods.indexOf(key):-2;
+  const start = ac_mods ? ac_mods.indexOf(key) : -2;
   if (start > 0) {
-    const end = ac_mods.indexOf(" ",(start-3))
-    return ac_mods.substring((start-4), end);
+    const end = ac_mods.indexOf(" ", start - 3);
+    // TODO: this does not get numbers that happen to be negative
+    return parseInt(ac_mods.substring(start - 4, end).replace(/^\D+/g, ""), 10);
   } else {
     return 0;
   }
