@@ -12,9 +12,9 @@ class CreatureSelector extends Component {
       <label>
         Select Creature:
         {/* <select value={this.state.value} onChange={this.handleChange}> */}
-        <select onChange={handleChange}>
-          {data.map(creature => (
-            <option key={creature.Name + " " + creature.Source}>
+        <select onChange={event => handleChange(event.target.value)}>
+          {data.map((creature, index) => (
+            <option key={index} value={creature.Name}>
               {creature.Name} CR {creature.CR}
             </option>
           ))}
